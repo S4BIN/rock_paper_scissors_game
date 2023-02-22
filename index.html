@@ -9,17 +9,14 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <center>
-        <h3>Let's play A Game of Rock Paper Scissors</h3>
-        
-        <br />
-        
-        <b>Type 0 for Rock , 1 For Paper, 2 for Scissors</b>
-        
-        <br />
-        
-        <br />
-        
-        <button class="button" onclick="startGame()">Start</button></center>
+    <div id="gameDiv">
+        <h1 class="gameText" id="playerText">PLayer: </h1>
+        <h1 class="gameText" id="computerText">Computer: </h1>
+        <h1 class="gameText" id="resultText">Result: </h1>
+
+        <button class="choiceBtn">ROCK</button>
+        <button class="choiceBtn">PAPER</button>
+        <button class="choiceBtn">SCISSORS</button>
+    </div>
 </body>
 </html>
