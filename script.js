@@ -1,23 +1,48 @@
-function startGame() {
-  cm = Math.floor(Math.random() * 3);
+const playerText = document.querySelector("#playerText");
+const computerText = document.querySelector("#computerText");
+const resultText = document.querySelector("#resultText");
+const choiceBtns = document.querySelectorAll(".choiceBtn");
 
-  input = prompt("Enter your Choice!");
+let player;
+let computer;
+let result;
 
-  pm = parseInt(input);
+choiceBtns.forEach(button => button.addEventListener("click", () => {
 
-if (cm == 0&& pm == 1) {
-    alert("You beat Computer with Paper against Rock");
-  } else if ((cm = 0&& pm == 2)) {
-    alert("Computer Beat you with Rock");
-  } else if ((cm = 1&& pm == 0)) {
-    alert("Computer Beat you With Paper");
-  } else if ((cm = 1&& pm == 2)) {
-    alert("You beat computer with Scissor against Paper");
-  } else if ((cm = 2&& pm == 0)) {
-    alert("You beat computer with Rock against Scissor");
-  } else if ((cm = 2&& pm == 1)) {
-    alert("Computer Beat you With Scissor");
-  } else {
-    alert("It's a tie");
+  player = button.textContent;
+  computerTurn();
+  playerText.textContent = `Player: ${player}`;
+  computerText.textContent = `Computer: ${computer}`;
+  resultText.textContent = checkWinner();
+}));
+
+function computerTurn(){
+  const randNum = Math.floor(Math.random() * 3) + 1;
+
+  switch(randNum){
+    case 1:
+      computer = "ROCK";
+      break;
+    case 2:
+      computer = "PAPER";
+      break;
+    case 3:
+      computer = "SCISSORS";
+      break;
+  }
+}
+
+function checkWinner(){
+  if(player == computer){
+    return "Draw!";
+  }
+  else if(computer == "ROCK"){
+    return (player == "PAPER") ? "You Win!" : "You Lose!"
+  } 
+  else if(computer == "PAPER"){
+    return (player == "SCISSORS") ? "You Win!" : "You Lose!"
+  }
+  else if(computer == "SCISSORS"){
+    return (player == "ROCK ") ? "You Win!" : "You Lose!"
   }
 }
