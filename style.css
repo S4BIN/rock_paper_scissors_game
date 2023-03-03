@@ -14,7 +14,7 @@
 #gameDiv{
     font-family: 'Brush Script MT', cursive;
     border: 3px solid;
-    border-radius: 25px;
+    border-radius: 24px;
     padding: 10px;
     background-color: rgb(154, 197, 104);
     text-align: center;
@@ -26,4 +26,9 @@
 
 #computerText{
     color: red;
+}
+
+#gameDiv p{
+    font-size: 20px;
+    margin-bottom: 5px;
 }
