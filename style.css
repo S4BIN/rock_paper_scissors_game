@@ -1,6 +1,9 @@
 .choiceBtn {
     line-height: 30px;
     width: 150px;
+    background-color: rgb(6, 107, 196);
+    color: white;
+    font-weight: bold;
 }
 
 #gameDiv{
