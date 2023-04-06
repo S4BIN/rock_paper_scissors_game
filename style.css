@@ -1,35 +1,35 @@
 .choiceBtn {
-    line-height: 30px;
-    width: 150px;
-    background-color: rgb(6, 107, 196);
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
-    border-style: none;
-    border-radius: 5px;
-    padding: 7px 5px 7px;
-    margin-inline: 5px;
-    cursor: pointer;
+  line-height: 30px;
+  width: 150px;
+  background-color: rgb(6, 107, 196);
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 7px 5px 7px;
+  margin-inline: 5px;
+  cursor: pointer;
 }
 
-#gameDiv{
-    font-family: 'Brush Script MT', cursive;
-    border: 3px solid;
-    border-radius: 24px;
-    padding: 10px;
-    background-color: rgb(154, 197, 104);
-    text-align: center;
+#gameDiv {
+  font-family: "Brush Script MT", cursive;
+  border: 3px solid;
+  border-radius: 24px;
+  padding: 10px;
+  background-color: rgb(154, 197, 104);
+  text-align: center;
 }
 
-#playerText{
-    color: blue;
+#playerText {
+  color: blue;
 }
 
-#computerText{
-    color: red;
+#computerText {
+  color: red;
 }
 
-#gameDiv p{
-    font-size: 20px;
-    margin-bottom: 5px;
+#gameDiv p {
+  font-size: 20px;
+  margin-bottom: 5px;
 }
